@@ -162,8 +162,7 @@ export default memo(function App() {
             </Col>
           </Row>
         </Form>
-        {/* <Button onClick={handlePotentialStockSearch}>筛选潜在股</Button> */}
-        <Table rowKey="code" loading={isLoading} columns={columns} dataSource={filterData} />
+        <Table rowKey="code" size="small" loading={isLoading} columns={columns} dataSource={filterData} />
         <Modal
           style={{ top: 30 }}
           title="macd"
