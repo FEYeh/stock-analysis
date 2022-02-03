@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./",
+    "rootDir": "./src",
+    "target": "es5",
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],
+    "module": "ESNext",
+    "moduleResolution": "Node", // 将模块解析模式设置为 node.js 解析模式
+    "resolveJsonModule": true, // 允许使用 .json 扩展名导入的模块
+    "isolatedModules": false, //孤立模块
+    "downlevelIteration": true,
+    "esModuleInterop": true,
+    "outDir": "build",
+    "forceConsistentCasingInFileNames": true, // 强制在文件名中使用一致的大小写
+    "noFallthroughCasesInSwitch": true, // 在 switch 语句中报告失败 case 的错误
+    "strict": true,
+    "checkJs": true, // 检查 JS 文件
+    "allowJs": true, // 允许编译 JavaScript 文件
+    "skipLibCheck": true, // 跳过所有声明文件的类型检查
+    "allowSyntheticDefaultImports": true, // 允许从没有默认导出的模块进行默认导入
+    "jsx": "react-jsx", // 改为 __jsx 调用并生成 .js 文件
+    "noEmit": true, //禁止编译器生成文件，例如 JavaScript 代码，source-map 或声明
+    "paths": {
+      //别名
+      "@/*": ["./src/*"]
+    }
+  },
+  "include": ["src"],
+  "exclude": ["node_modules", "build"]
+}
